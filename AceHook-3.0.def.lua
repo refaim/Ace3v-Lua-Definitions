@@ -168,3 +168,18 @@ function LibAceHookEmbedDef:UnhookAll() end
 ---@return boolean
 ---@overload fun(method: string): boolean
 function LibAceHookEmbedDef:IsHooked(object, method) end
+
+---@class LibAceHookDef: LibAceHookEmbedDef
+LibAceHookDef = {}
+
+---
+--- Embeds AceHook into the target object making the functions from the mixins list available on target:..
+---@param target table @ target object to embed AceHook in
+---@return LibAceHookEmbedDef
+function LibAceHookDef:Embed(target) end
+
+---
+--- Unhooks all hooks when the target disables.
+--- this method should be called by the target manually or by an addon framework
+---@param target LibAceHookEmbedDef @ target object that is being disabled
+function LibAceHookDef:OnEmbedDisable(target) end

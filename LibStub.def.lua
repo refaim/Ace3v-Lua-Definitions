@@ -1,5 +1,33 @@
 ---@class LibStubDef
----@overload fun(major: string, silent: boolean): table, number|nil
+---@overload fun(major: "AceAddon-3.0", silent: true): LibAceAddonDef|nil, number|nil
+---@overload fun(major: "AceAddon-3.0", silent: false): LibAceAddonDef, number|nil
+---@overload fun(major: "AceAddon-3.0"): LibAceAddonDef, number|nil
+---@overload fun(major: "AceConfig-3.0", silent: true): LibAceConfigDef|nil, number|nil
+---@overload fun(major: "AceConfig-3.0", silent: false): LibAceConfigDef, number|nil
+---@overload fun(major: "AceConfig-3.0"): LibAceConfigDef, number|nil
+---@overload fun(major: "AceConfigCmd-3.0", silent: true): LibAceConfigCmdDef|nil, number|nil
+---@overload fun(major: "AceConfigCmd-3.0", silent: false): LibAceConfigCmdDef, number|nil
+---@overload fun(major: "AceConfigCmd-3.0"): LibAceConfigCmdDef, number|nil
+---@overload fun(major: "AceConfigDialog-3.0", silent: true): LibAceConfigDialogDef|nil, number|nil
+---@overload fun(major: "AceConfigDialog-3.0", silent: false): LibAceConfigDialogDef, number|nil
+---@overload fun(major: "AceConfigDialog-3.0"): LibAceConfigDialogDef, number|nil
+---@overload fun(major: "AceDB-3.0", silent: true): LibAceDBDef|nil, number|nil
+---@overload fun(major: "AceDB-3.0", silent: false): LibAceDBDef, number|nil
+---@overload fun(major: "AceDB-3.0"): LibAceDBDef, number|nil
+---@overload fun(major: "AceEvent-3.0", silent: true): LibAceEventDef|nil, number|nil
+---@overload fun(major: "AceEvent-3.0", silent: false): LibAceEventDef, number|nil
+---@overload fun(major: "AceEvent-3.0"): LibAceEventDef, number|nil
+---@overload fun(major: "AceGUI-3.0", silent: true): LibAceGUIDef|nil, number|nil
+---@overload fun(major: "AceGUI-3.0", silent: false): LibAceGUIDef, number|nil
+---@overload fun(major: "AceGUI-3.0"): LibAceGUIDef, number|nil
+---@overload fun(major: "AceHook-3.0", silent: true): LibAceHookDef|nil, number|nil
+---@overload fun(major: "AceHook-3.0", silent: false): LibAceHookDef, number|nil
+---@overload fun(major: "AceHook-3.0"): LibAceHookDef, number|nil
+---@overload fun(major: "AceLocale-3.0", silent: true): LibAceLocaleDef|nil, number|nil
+---@overload fun(major: "AceLocale-3.0", silent: false): LibAceLocaleDef, number|nil
+---@overload fun(major: "AceLocale-3.0"): LibAceLocaleDef, number|nil
+---@overload fun(major: string, silent: true): table|nil, number|nil
+---@overload fun(major: string, silent: false): table, number|nil
 ---@overload fun(major: string): table, number|nil
 LibStubDef = {}
 
@@ -11,5 +39,34 @@ function LibStubDef:NewLibrary(major, minor) end
 ---@param major string
 ---@param silent boolean @ false by default
 ---@return table, number|nil
+---@overload fun(major: "AceAddon-3.0", silent: true): LibAceAddonDef|nil, number|nil
+---@overload fun(major: "AceAddon-3.0", silent: false): LibAceAddonDef, number|nil
+---@overload fun(major: "AceAddon-3.0"): LibAceAddonDef, number|nil
+---@overload fun(major: "AceConfig-3.0", silent: true): LibAceConfigDef|nil, number|nil
+---@overload fun(major: "AceConfig-3.0", silent: false): LibAceConfigDef, number|nil
+---@overload fun(major: "AceConfig-3.0"): LibAceConfigDef, number|nil
+---@overload fun(major: "AceConfigCmd-3.0", silent: true): LibAceConfigCmdDef|nil, number|nil
+---@overload fun(major: "AceConfigCmd-3.0", silent: false): LibAceConfigCmdDef, number|nil
+---@overload fun(major: "AceConfigCmd-3.0"): LibAceConfigCmdDef, number|nil
+---@overload fun(major: "AceConfigDialog-3.0", silent: true): LibAceConfigDialogDef|nil, number|nil
+---@overload fun(major: "AceConfigDialog-3.0", silent: false): LibAceConfigDialogDef, number|nil
+---@overload fun(major: "AceConfigDialog-3.0"): LibAceConfigDialogDef, number|nil
+---@overload fun(major: "AceDB-3.0", silent: true): LibAceDBDef|nil, number|nil
+---@overload fun(major: "AceDB-3.0", silent: false): LibAceDBDef, number|nil
+---@overload fun(major: "AceDB-3.0"): LibAceDBDef, number|nil
+---@overload fun(major: "AceEvent-3.0", silent: true): LibAceEventDef|nil, number|nil
+---@overload fun(major: "AceEvent-3.0", silent: false): LibAceEventDef, number|nil
+---@overload fun(major: "AceEvent-3.0"): LibAceEventDef, number|nil
+---@overload fun(major: "AceGUI-3.0", silent: true): LibAceGUIDef|nil, number|nil
+---@overload fun(major: "AceGUI-3.0", silent: false): LibAceGUIDef, number|nil
+---@overload fun(major: "AceGUI-3.0"): LibAceGUIDef, number|nil
+---@overload fun(major: "AceHook-3.0", silent: true): LibAceHookDef|nil, number|nil
+---@overload fun(major: "AceHook-3.0", silent: false): LibAceHookDef, number|nil
+---@overload fun(major: "AceHook-3.0"): LibAceHookDef, number|nil
+---@overload fun(major: "AceLocale-3.0", silent: true): LibAceLocaleDef|nil, number|nil
+---@overload fun(major: "AceLocale-3.0", silent: false): LibAceLocaleDef, number|nil
+---@overload fun(major: "AceLocale-3.0"): LibAceLocaleDef, number|nil
+---@overload fun(major: string, silent: true): table|nil, number|nil
+---@overload fun(major: string, silent: false): table, number|nil
 ---@overload fun(major: string): table, number|nil
 function LibStubDef:GetLibrary(major, silent) end

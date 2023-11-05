@@ -1,5 +1,5 @@
----@class AceDBDef
-AceDBDef = {}
+---@class LibAceDBDef
+LibAceDBDef = {}
 
 ---
 --- Creates a new database object that can be used to handle database settings and profiles.
@@ -20,4 +20,4 @@ AceDBDef = {}
 ---@param defaultProfile string|true @ The name of the default profile. If not set, a character specific profile will be used as the default.
 ---@return table
 ---@overload fun(tbl: string|table, defaults: table): table
-function AceDBDef:New(tbl, defaults, defaultProfile) end
+function LibAceDBDef:New(tbl, defaults, defaultProfile) end
