@@ -11,6 +11,9 @@
 ---@overload fun(major: "AceConfigDialog-3.0", silent: true): LibAceConfigDialogDef|nil, number|nil
 ---@overload fun(major: "AceConfigDialog-3.0", silent: false): LibAceConfigDialogDef, number|nil
 ---@overload fun(major: "AceConfigDialog-3.0"): LibAceConfigDialogDef, number|nil
+---@overload fun(major: "AceCore-3.0", silent: true): LibAceCoreDef|nil, number|nil
+---@overload fun(major: "AceCore-3.0", silent: false): LibAceCoreDef, number|nil
+---@overload fun(major: "AceCore-3.0"): LibAceCoreDef, number|nil
 ---@overload fun(major: "AceDB-3.0", silent: true): LibAceDBDef|nil, number|nil
 ---@overload fun(major: "AceDB-3.0", silent: false): LibAceDBDef, number|nil
 ---@overload fun(major: "AceDB-3.0"): LibAceDBDef, number|nil
@@ -51,6 +54,9 @@ function LibStubDef:NewLibrary(major, minor) end
 ---@overload fun(major: "AceConfigDialog-3.0", silent: true): LibAceConfigDialogDef|nil, number|nil
 ---@overload fun(major: "AceConfigDialog-3.0", silent: false): LibAceConfigDialogDef, number|nil
 ---@overload fun(major: "AceConfigDialog-3.0"): LibAceConfigDialogDef, number|nil
+---@overload fun(major: "AceCore-3.0", silent: true): LibAceCoreDef|nil, number|nil
+---@overload fun(major: "AceCore-3.0", silent: false): LibAceCoreDef, number|nil
+---@overload fun(major: "AceCore-3.0"): LibAceCoreDef, number|nil
 ---@overload fun(major: "AceDB-3.0", silent: true): LibAceDBDef|nil, number|nil
 ---@overload fun(major: "AceDB-3.0", silent: false): LibAceDBDef, number|nil
 ---@overload fun(major: "AceDB-3.0"): LibAceDBDef, number|nil
