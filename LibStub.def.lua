@@ -20,9 +20,9 @@
 ---@overload fun(major: "AceEvent-3.0", silent: true): LibAceEventDef|nil, number|nil
 ---@overload fun(major: "AceEvent-3.0", silent: false): LibAceEventDef, number|nil
 ---@overload fun(major: "AceEvent-3.0"): LibAceEventDef, number|nil
----@overload fun(major: "AceGUI-3.0", silent: true): LibAceGUIDef|nil, number|nil
----@overload fun(major: "AceGUI-3.0", silent: false): LibAceGUIDef, number|nil
----@overload fun(major: "AceGUI-3.0"): LibAceGUIDef, number|nil
+---@overload fun(major: "AceGUI-3.0", silent: true): LibAceGUI|nil, number|nil
+---@overload fun(major: "AceGUI-3.0", silent: false): LibAceGUI, number|nil
+---@overload fun(major: "AceGUI-3.0"): LibAceGUI, number|nil
 ---@overload fun(major: "AceHook-3.0", silent: true): LibAceHookDef|nil, number|nil
 ---@overload fun(major: "AceHook-3.0", silent: false): LibAceHookDef, number|nil
 ---@overload fun(major: "AceHook-3.0"): LibAceHookDef, number|nil
@@ -63,9 +63,9 @@ function LibStubDef:NewLibrary(major, minor) end
 ---@overload fun(major: "AceEvent-3.0", silent: true): LibAceEventDef|nil, number|nil
 ---@overload fun(major: "AceEvent-3.0", silent: false): LibAceEventDef, number|nil
 ---@overload fun(major: "AceEvent-3.0"): LibAceEventDef, number|nil
----@overload fun(major: "AceGUI-3.0", silent: true): LibAceGUIDef|nil, number|nil
----@overload fun(major: "AceGUI-3.0", silent: false): LibAceGUIDef, number|nil
----@overload fun(major: "AceGUI-3.0"): LibAceGUIDef, number|nil
+---@overload fun(major: "AceGUI-3.0", silent: true): LibAceGUI|nil, number|nil
+---@overload fun(major: "AceGUI-3.0", silent: false): LibAceGUI, number|nil
+---@overload fun(major: "AceGUI-3.0"): LibAceGUI, number|nil
 ---@overload fun(major: "AceHook-3.0", silent: true): LibAceHookDef|nil, number|nil
 ---@overload fun(major: "AceHook-3.0", silent: false): LibAceHookDef, number|nil
 ---@overload fun(major: "AceHook-3.0"): LibAceHookDef, number|nil
